@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoon On Focus</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/icon.ico">
+
+
+</head>
+<body>
+    <!-- navbar section -->
+    <nav>
+        <b>Pioneer</b>
+
+        <section>
+            <p>Car</p>
+            <p>DJ</p>
+            <p>Apps</p>
+        </section>
+
+    
+        <div>
+            <div class="div1" >
+                <input type="text" id="input1" placeholder="Search (new)">
+            </div>
+    
+            <div class="div2" >
+                <input type="text" id="input2" placeholder="Search (new)">
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <br><br>
+    <section>
+        <div class="one">
+            <br>
+            <button id="change" value="1">Update design</button>
+            <br><br>
+            
+
+            <h2 id="kia">Old Design</h2>
+            <p>Hello, Gautam. I was going through  https://pioneer-india.in/ as you show me the website once. </p>
+            <p>I found some of the design flow that I want to bring it to you. I have replicate the website using just HTML, CSS and Javascript. The perpouse of this website is just share my ideology on web design that grabs the visitor attention. </p>
+            <b>* First point: Car Upgrade guide.</b>
+            <p>In the third section of the website where there is option for visitor to find out the car upgrade guide.</p>
+            <p>The background image of the music console stays static. Which is not very interactive</p>
+            <p>I propose, the background image to scale or zoom out whenver a visitor come a cross that area. Which could grabe more visitor attention. Like I have shown in the sample. </p>
+            <b>* Second point: Search input box.</b>
+            <p>The search input box and it's border-bottom looks misalign</p>
+            <i>You can toggle between the design I proposed by click on the "Update" button.</i>
+        </div>
+
+
+        <div class="two" id="new" style="display: none;"> 
+            <h2>Hover Over the Image (NEW)</h2>
+            <section class="image-zoom-body">
+                <section class="image-zoom-cover-text" id="zoom-me">
+                    <p style="font-size: 35px;">Car Upgrade Guide<p>
+                    <p>Find out which Pioneer product will fit your car perfectly</p>
+                    <button>FIND OUT NOW</button>
+                </section>
+                <section class="image-zoom-cover">
+                </section>
+                <section class="image-zoom" id="zoom-image">
+                </section>
+            </section>
+        </div>
+
+        <div class="two" id="old"> 
+            <h2>Hover Over the Image (OLD)</h2>
+            <section class="image-zoom-body">
+                <section class="image-zoom-cover-text" id="zoom-me">
+                    <p style="font-size: 35px;">Car Upgrade Guide<p>
+                    <p>Find out which Pioneer product will fit your car perfectly</p>
+                    <button>FIND OUT NOW</button>
+                </section>
+                <section class="image-zoom-cover">
+                </section>
+                <section class="image-zoom" id="zoom-image">
+                </section>
+            </section>
+        </div>
+
+
+      <br><br>
+    </section>
+
+    
+</body>
+<script src="scripts.js"></script>
+</html>

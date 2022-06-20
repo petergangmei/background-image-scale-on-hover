@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    /* background-color: rgb(175, 4, 4); */
+    background:linear-gradient(to right, rgb(136, 0, 0) , rgb(179, 5, 5));
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 2px 2px 0 rgb(85, 33, 33);
+
+    
+}
+
+nav b{
+    font-size: 40px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
+nav div input{
+    margin-right: 80px;
+    margin-top: 5px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(228, 212, 212);
+    background-color: rgb(175, 4, 4);
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+
+}
+.div1 input{
+    padding: 8px;
+    height: 20px;
+    width: 165px;
+    /* display: none; New */
+
+}
+
+.div2 input{
+    /* padding: 8px; */
+    padding-top: 5px;
+    padding-left:10px;
+    height: 30px;
+    width: 170px;
+    margin-top: 5px;
+}
+
+
+#input2{
+    display: none;
+}
+
+
+nav div input::placeholder{
+    color:rgb(214, 205, 205);
+    font-size: 14px;
+    
+    }
+
+input:focus, input:focus{
+    outline: none;
+    background-color: rgb(196, 1, 1);
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 0.5s ease-out;
+    border-bottom: 0.5px solid rgb(145, 0, 0);
+}
+
+nav section{
+    display: flex;
+    width: 200px;
+    color: white;
+    justify-content: space-around;
+    margin-left: 11vw;
+}
+nav section p{
+    cursor: pointer;
+}
+
+section div{
+    min-height: 30vh;
+}
+
+
+.one{
+    padding: 10px;
+    text-align: center;
+}
+.one p{
+    font-size: 19px;
+}
+
+
+.two{
+    text-align: center;
+}
+.two p{
+    font-size: 19px;
+}
+
+.image-zoom-body{
+    height: 280px;
+    border: 2px sold red;
+    background-color: aqua;
+    overflow: hidden;
+    
+}
+.image-zoom-cover-text{
+    height: 280px;
+    z-index: 3;
+    width: 100%;
+    position: absolute;
+    font-size: 30px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.image-zoom-cover-text button{
+    cursor: pointer;
+    height: 45px;
+    width: 140px;
+    border-radius: 1px;
+    background-image: linear-gradient(to right, rgb(136, 0, 0) , rgb(179, 5, 5));
+    /* background-image: linear-gradient(to right, red , yellow); */
+    /* background-color: rgb(179, 5, 5); */
+    border: 1px solid rgb(179, 5, 5);
+    color: white;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.image-zoom-cover{
+    background-color: rgb(0, 0, 0);
+    height: 280px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.image-zoom{
+    z-index: 1;
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    background-image: url('img/image1-min.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.7s;
+    transform:scale(1.1);
+}
+
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+#change{
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    box-shadow: 0px 2px 2px 0px;
+    background: linear-gradient(to right,rgb(131, 0, 0), rgb(204, 3, 3));
+}
